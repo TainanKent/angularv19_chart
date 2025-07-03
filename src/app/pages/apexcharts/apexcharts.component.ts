@@ -1,9 +1,13 @@
+// 官方網址: https://apexcharts.com/
+// 須注意 angular 版本: V9 
+// 對應的 npm 套件: ng-apexcharts@v1.15.0
+// v1.16.0 為 V20 版本使用
+
 import { Component } from '@angular/core';
 import { NgApexchartsModule } from "ng-apexcharts";
 import {
   ApexAxisChartSeries,
   ApexChart,
-  ChartComponent,
   ApexDataLabels,
   ApexXAxis,
   ApexYAxis,
@@ -65,6 +69,7 @@ export type ChartRadarOptions = {
   series: ApexAxisChartSeries;
   chart: ApexChart;
   stroke: ApexStroke;
+  
   fill: ApexFill;
   markers: ApexMarkers;
   xaxis: ApexXAxis;
