@@ -1,0 +1,91 @@
+<div class="grid grid-cols-3 gap-2">
+  <div>
+    <div class="text-white">
+      Bar Chart
+    </div>
+    <div class="w-[90%]">
+      <apx-chart
+        [series]="chartOptions.series"
+        [chart]="chartOptions.chart"
+        [dataLabels]="chartOptions.dataLabels"
+        [plotOptions]="chartOptions.plotOptions"
+        [xaxis]="chartOptions.xaxis"
+        [yaxis]="chartOptions.yaxis"
+        [fill]="chartOptions.fill"
+        [grid]="chartOptions.grid"
+        [tooltip]="chartOptions.tooltip"
+      ></apx-chart>
+    </div>
+  </div>
+
+  <div>
+    <div class="text-white">
+      Line Chart
+    </div>
+    <div class="w-[90%]">
+      <apx-chart
+        [series]="chartLineOptions.series"
+        [chart]="chartLineOptions.chart"
+        [dataLabels]="chartLineOptions.dataLabels"
+        [plotOptions]="chartLineOptions.plotOptions"
+        [xaxis]="chartLineOptions.xaxis"
+        [yaxis]="chartLineOptions.yaxis"
+        [fill]="chartLineOptions.fill"
+        [grid]="chartLineOptions.grid"
+        [markers]="chartLineOptions.markers"
+      ></apx-chart>
+    </div>
+  </div>
+
+  <div>
+    <div class="text-white">
+      Pie Chart
+    </div>
+    <div class="w-[90%]">
+      <apx-chart
+        [series]="chartPieOptions.series"
+        [chart]="chartPieOptions.chart"
+        [dataLabels]="chartPieOptions.dataLabels"
+        [labels]="chartPieOptions.labels"
+        [responsive]="chartPieOptions.responsive"
+        [legend]="chartPieOptions.legend"
+        [stroke]="chartSemiOptions.stroke"
+      ></apx-chart>
+    </div>
+  </div>
+
+  <div>
+    <div class="text-white">
+      Semi Chart
+    </div>
+    <div class="w-[90%] h-[400px]">
+      <apx-chart
+        [series]="chartSemiOptions.series"
+        [chart]="chartSemiOptions.chart"
+        [grid]="chartSemiOptions.grid"
+        [plotOptions]="chartSemiOptions.plotOptions"
+        [responsive]="chartSemiOptions.responsive"
+        [legend]="chartPieOptions.legend"
+        [stroke]="chartSemiOptions.stroke"
+      ></apx-chart>
+    </div>
+  </div>
+
+  <div>
+    <div class="text-white">
+      Radar Chart
+    </div>
+    <div class="w-[90%]">
+      <apx-chart
+        [series]="chartRadarOptions.series"
+        [chart]="chartRadarOptions.chart"
+        [xaxis]="chartRadarOptions.xaxis"
+        [markers]="chartRadarOptions.markers"
+        [fill]="chartRadarOptions.fill"
+      ></apx-chart>
+    </div>
+  </div>
+</div>
+
+
+
